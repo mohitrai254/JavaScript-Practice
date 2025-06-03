@@ -9,3 +9,9 @@ let arr = [1, 2, 3, 4, 5];
 //   console.log(arr[i]);
 //   i--;
 // }
+
+// let i = arr.length - 1;
+// do {
+//   console.log(arr[i]);
+//   i--;
+// } while (i >= 0);
