@@ -51,3 +51,107 @@
 // printAll(1, 2, 3, 4, 5);
 
 //FUNCTIONS- 4th June
+// console.log(console.log("Hello"));
+// First hello will be printed, then undefined. Because console.log is returning nothing, so undefined will be returned and printed.
+
+// To return multiple values, we can use array
+// function squareAndCube(num) {
+//   let sqr = num ** 2;
+//   let cube = num ** 3;
+//   return [sqr, cube];
+// }
+// console.log(squareAndCube(3));
+
+// Local and global scope
+
+//Nested functions
+// function outerFunction() {
+//   console.log("This is an outer function");
+//   function innerFunction() {
+//     console.log("This is an inner function");
+//   }
+//   return innerFunction;
+// }
+// let out = outerFunction()();
+//The returned value will be stored in out which is inner function, when we write second (), the inner function is getting called.
+
+// FUNCTIONS- 5th June
+
+//Higher Order functions
+// function print() {
+//   console.log("Print this");
+// }
+//Takes function as input
+// function higherOrderFunction1(callback) {
+//   console.log("First print this");
+//   callback();
+// }
+// higherOrderFunction1(print);
+
+//Return function as result
+// function higherOrderFunction2() {
+//   return print;
+// }
+// higherOrderFunction2()();
+// let output = higherOrderFunction2();
+// output();
+
+//Higher Order functions
+//Callbacks
+//Closures
+//Arrow functions
+
+//Spread and Rest operator
+//SPREAD
+//In array
+// const arr1 = [1, 2];
+// const arr2 = [3, 4];
+// const combined = [...arr1, ...arr2];
+// console.log(combined);
+// let newArr = [...arr1, 5];
+// console.log(newArr);
+
+//In objects
+// const user = { name: "Alice", age: 25 };
+// const updatedUser = { ...user, age: 26 };
+// console.log(updatedUser);
+
+//In function calls
+// function add(a, b, c) {
+//   return a + b + c;
+// }
+// const nums = [1, 2, 3];
+// console.log(add(...nums));
+
+//REST
+//In Array Destructuring
+// const [first, ...rest] = [10, 20, 30, 40];
+// console.log(first);
+// console.log(rest);
+
+//In function parameters
+// function add(...args) {
+//   let sum = 0;
+//   console.log(args);
+//   for (let i = 0; i < args.length; i++) {
+//     sum += args[i];
+//   }
+//   console.log(sum);
+// }
+// add(1, 2, 3);
+
+// In Object Destructuring
+// const { name, ...otherInfo } = { name: "Bob", age: 30, city: "Delhi" };
+// console.log(name);
+// console.log(otherInfo);
+
+//Closures
+// function outerFunction() {
+//   let name = "Mohit";
+//   function innerFunction() {
+//     console.log(name);
+//   }
+//   return innerFunction;
+// }
+// const output = outerFunction();
+// output();
