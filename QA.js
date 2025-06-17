@@ -38,3 +38,27 @@
 //     console.log("Present");
 //   }
 // }
+
+// 5th June
+// average array
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum / arr.length);
+
+// first letter capital
+// function capital(name) {
+//   const words = name.split(" ");
+//   // console.log(words);
+//   const capitalWords = words.map((word) => {
+//     return word.charAt(0).toUpperCase() + word.slice(1);
+//   });
+//   const result = capitalWords.join(" ");
+//   console.log(result);
+// }
+
+// capital("hello world");
+
+// 17th June
