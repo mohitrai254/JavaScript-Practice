@@ -30,7 +30,7 @@ let coursesObject = [
 // console.log(typeof stringJson);
 // console.log(stringJson);
 
-// let stringJson = JSON.stringify(coursesObject, ["id", "title"], 4);     // To second index is for filter and third is for spaces
+// let stringJson = JSON.stringify(coursesObject, ["id", "title"], 4);     // The second index is for filter and third is for spaces
 // console.log(stringJson);
 
 // JSON.parse(): Converts a JSON string into a JavaScript object.

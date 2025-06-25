@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click me</button>
+    <script>
+      let cb_click = () => console.log("I am clicked");
+      let cb_mouseover = () => console.log("Mouse moved on the button");
+      let cb_keydown = (event) => console.log(`Key ${event.key} is clicked`);
+
+      let button = document.querySelector("#button");
+      button.addEventListener("click", cb_click);
+      button.addEventListener("mouseover", cb_mouseover);
+      document.addEventListener("keydown", cb_keydown);
+    </script>
+  </body>
+</html>
