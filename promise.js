@@ -35,12 +35,12 @@
 //   console.log("Outside Timeout");
 // }, 0);
 
-// let promise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     console.log("Inside Promise Timeout");
-//     resolve();
-//   }, 0);
-// });
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("Inside Promise Timeout");
+    resolve();
+  }, 0);
+});
 
 // // the resolve() happens inside a setTimeout(...), which is a macrotask — so the .then() callback gets scheduled only after that timeout executes.
 // promise.then(() => console.log("Promise then"));
